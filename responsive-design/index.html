@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Ensures proper scaling on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="ShopEase - A modern online store offering quality products at affordable prices."
+    />
+
+    <title>ShopEase | Modern Online Store</title>
+
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <!--
+         HEADER / NAVIGATION
+     -->
+    <header class="header">
+      <div class="container navbar">
+        <!-- Website Logo -->
+        <a href="#" class="logo"> Shop<span>Ease</span> </a>
+
+        <!-- Mobile navigation toggle -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+        <label
+          for="menu-toggle"
+          class="menu-icon"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <!-- Navigation Menu -->
+        <nav class="nav-menu">
+          <a href="#home">Home</a>
+          <a href="#products">Products</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Shopping Cart -->
+        <a href="#" class="cart"> 🛒 <span>Cart</span> </a>
+      </div>
+    </header>
+
+    <!-- =
+         HERO SECTION
+     -->
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="hero-label">NEW COLLECTION 2026</p>
+
+            <h1>
+              Discover Products
+              <span>You'll Love.</span>
+            </h1>
+
+            <p class="hero-description">
+              Explore our carefully selected collection of stylish, quality
+              products designed to make everyday life better.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#products" class="btn btn-primary"> Shop Collection </a>
+
+              <a href="#about" class="btn btn-secondary"> Learn More </a>
+            </div>
+          </div>
+
+          <!-- Decorative hero product -->
+          <div class="hero-image">
+            <div class="hero-circle"></div>
+
+            <div class="hero-product">
+              <div class="product-shape">✨</div>
+            </div>
+
+            <div class="floating-card">
+              <span>⭐</span>
+              <div>
+                <strong>Top Rated</strong>
+                <small>Customer favorite</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--
+             PRODUCTS SECTION
+         -->
+      <section id="products" class="products-section">
+        <div class="container">
+          <!-- Section Heading -->
+          <div class="section-heading">
+            <div>
+              <p class="section-label">OUR COLLECTION</p>
+              <h2>Featured Products</h2>
+            </div>
+
+            <p class="section-description">
+              Discover our most popular products, carefully selected for you.
+            </p>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="product-grid">
+            <!-- Product Card 1 -->
+            <article class="product-card">
+              <div class="product-image product-one">
+                <span class="product-badge">NEW</span>
+                <span class="product-emoji">🎧</span>
+              </div>
+
+              <div class="product-info">
+                <p class="product-category">Electronics</p>
+
+                <h3>Wireless Headphones</h3>
+
+                <p class="product-description">
+                  Enjoy crystal-clear sound with comfortable wireless
+                  headphones.
+                </p>
+
+                <div class="product-bottom">
+                  <span class="price">$89.99</span>
+
+                  <a href="#" class="shop-button"> Shop Now → </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product Card 2 -->
+            <article class="product-card">
+              <div class="product-image product-two">
+                <span class="product-emoji">⌚</span>
+              </div>
+
+              <div class="product-info">
+                <p class="product-category">Accessories</p>
+
+                <h3>Smart Watch</h3>
+
+                <p class="product-description">
+                  Track your fitness, notifications, and daily activities with
+                  ease.
+                </p>
+
+                <div class="product-bottom">
+                  <span class="price">$129.99</span>
+
+                  <a href="#" class="shop-button"> Shop Now → </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product Card 3 -->
+            <article class="product-card">
+              <div class="product-image product-three">
+                <span class="product-badge">SALE</span>
+                <span class="product-emoji">👟</span>
+              </div>
+
+              <div class="product-info">
+                <p class="product-category">Fashion</p>
+
+                <h3>Classic Sneakers</h3>
+
+                <p class="product-description">
+                  Comfortable and stylish sneakers perfect for everyday
+                  adventures.
+                </p>
+
+                <div class="product-bottom">
+                  <span class="price">$74.99</span>
+
+                  <a href="#" class="shop-button"> Shop Now → </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product Card 4 -->
+            <article class="product-card">
+              <div class="product-image product-four">
+                <span class="product-emoji">🎒</span>
+              </div>
+
+              <div class="product-info">
+                <p class="product-category">Lifestyle</p>
+
+                <h3>Travel Backpack</h3>
+
+                <p class="product-description">
+                  A durable and spacious backpack built for work and travel.
+                </p>
+
+                <div class="product-bottom">
+                  <span class="price">$59.99</span>
+
+                  <a href="#" class="shop-button"> Shop Now → </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--
+             ABOUT SECTION
+         -->
+      <section id="about" class="about-section">
+        <div class="container about-content">
+          <div>
+            <p class="section-label">WHY SHOPEASE?</p>
+
+            <h2>Shopping made simple.</h2>
+          </div>
+
+          <div class="about-text">
+            <p>
+              We believe online shopping should be simple, convenient, and
+              enjoyable. That's why we carefully select quality products and
+              provide a seamless shopping experience.
+            </p>
+
+            <div class="features">
+              <div class="feature">
+                <span>🚚</span>
+                <div>
+                  <strong>Fast Delivery</strong>
+                  <p>Quick and reliable shipping.</p>
+                </div>
+              </div>
+
+              <div class="feature">
+                <span>🔒</span>
+                <div>
+                  <strong>Secure Payment</strong>
+                  <p>Your information stays protected.</p>
+                </div>
+              </div>
+
+              <div class="feature">
+                <span>💬</span>
+                <div>
+                  <strong>Customer Support</strong>
+                  <p>We're always here to help.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--
+         FOOTER
+     -->
+    <footer id="contact" class="footer">
+      <div class="container footer-content">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#" class="logo"> Shop<span>Ease</span> </a>
+
+          <p>Quality products. Simple shopping. Better living.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+
+          <a href="#home">Home</a>
+          <a href="#products">Products</a>
+          <a href="#about">About Us</a>
+        </div>
+
+        <!-- Customer Service -->
+        <div class="footer-column">
+          <h3>Support</h3>
+
+          <a href="#">FAQ</a>
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-column newsletter">
+          <h3>Stay Updated</h3>
+
+          <p>Subscribe for new products and special offers.</p>
+
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Your email address"
+              aria-label="Email address"
+            />
+
+            <button type="submit">→</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 ShopEase. All rights reserved.</p>
+
+          <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
