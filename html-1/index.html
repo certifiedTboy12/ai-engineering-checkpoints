@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Defines the character encoding used by the document -->
+    <meta charset="UTF-8" />
+
+    <!-- Makes the page responsive on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Description for search engines -->
+    <meta
+      name="description"
+      content="A personal portfolio website showcasing my skills, projects, experience, and contact information."
+    />
+
+    <!-- Page title displayed in the browser tab -->
+    <title>My Portfolio | Full-Stack Developer</title>
+  </head>
+
+  <body>
+    <!-- HEADER SECTION Contains the website title and main navigation -->
+    <header id="home">
+      <h1>Welcome to My Portfolio</h1>
+
+      <p>
+        Hello! I'm a Full-Stack Developer passionate about building useful,
+        scalable, and user-friendly applications.
+      </p>
+
+      <!-- Main navigation using semantic nav element -->
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+
+          <li>
+            <a href="#about">About</a>
+          </li>
+
+          <li>
+            <a href="#work">Work</a>
+          </li>
+
+          <li>
+            <a href="#resume">Resume</a>
+          </li>
+
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <hr />
+    </header>
+
+    <!-- MAIN CONTENT Contains the major sections of the portfolio -->
+    <main>
+      <!-- ABOUT SECTION -->
+      <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+          I am a software developer interested in creating modern web
+          applications and solving real-world problems with technology.
+        </p>
+
+        <p>
+          My development interests include frontend development, backend
+          development, databases, cloud technologies, APIs, and artificial
+          intelligence.
+        </p>
+
+        <!-- Unordered list of technical skills -->
+        <h3>My Technical Skills</h3>
+
+        <ul>
+          <li>HTML5 and Semantic HTML</li>
+          <li>CSS and Responsive Design</li>
+          <li>JavaScript and TypeScript</li>
+          <li>React and React Native</li>
+          <li>Node.js and Express.js</li>
+          <li>MongoDB and PostgreSQL</li>
+          <li>Docker and Cloud Deployment</li>
+          <li>REST APIs and WebSockets</li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <!-- WORK SECTION Showcases previous projects/work -->
+      <section id="work">
+        <h2>My Work</h2>
+
+        <p>Below are some examples of projects I have worked on.</p>
+
+        <!-- Project 1 -->
+        <article>
+          <h3>Movie Recommendation Application</h3>
+
+          <p>
+            A web application that allows users to search for movies and
+            discover information about their favorite films.
+          </p>
+
+          <ul>
+            <li>React</li>
+            <li>JavaScript</li>
+            <li>REST API</li>
+            <li>TMDB API</li>
+          </ul>
+
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project
+          </a>
+        </article>
+
+        <!-- Project 2 -->
+        <article>
+          <h3>Customer Service Assistant</h3>
+
+          <p>
+            An AI-powered customer service application designed to help
+            customers get quick answers to common questions.
+          </p>
+
+          <ul>
+            <li>Node.js</li>
+            <li>TypeScript</li>
+            <li>AI API</li>
+            <li>REST API</li>
+          </ul>
+
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project
+          </a>
+        </article>
+
+        <!-- Project 3 -->
+        <article>
+          <h3>Weather Information App</h3>
+
+          <p>
+            A weather application that retrieves real-time weather information
+            from an external API.
+          </p>
+
+          <ul>
+            <li>Java</li>
+            <li>JavaFX</li>
+            <li>Weather API</li>
+          </ul>
+
+          <a href="#contact"> Request More Information </a>
+        </article>
+      </section>
+
+      <hr />
+
+      <!-- MEDIA SECTION: Demonstrates the use of video and audio -->
+      <section id="media">
+        <h2>Media</h2>
+
+        <h3>Introduction Video</h3>
+
+        <!--
+                Video element.
+                controls allows the user to play, pause, and adjust volume.
+                width provides an appropriate default video size.
+            -->
+        <video controls width="500" preload="metadata">
+          <source src="media/portfolio-introduction.mp4" type="video/mp4" />
+
+          Your browser does not support the video element.
+        </video>
+
+        <p>
+          Watch the video above to learn more about my work and development
+          journey.
+        </p>
+
+        <h3>Developer Introduction Audio</h3>
+
+        <!-- Audio element with browser controls -->
+        <audio controls preload="metadata">
+          <source src="media/introduction.mp3" type="audio/mpeg" />
+
+          Your browser does not support the audio element.
+        </audio>
+
+        <p>Listen to a short introduction about my development journey.</p>
+      </section>
+
+      <hr />
+
+      <!-- RESUME SECTION Contains professional information in a table -->
+      <section id="resume">
+        <h2>Resume</h2>
+
+        <h3>Professional Experience</h3>
+
+        <!-- Accessible table with caption and header cells -->
+        <table border="1">
+          <caption>
+            Professional Experience
+          </caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Period</th>
+              <th scope="col">Position</th>
+              <th scope="col">Responsibilities</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>2024 - Present</td>
+              <td>Full-Stack Developer</td>
+              <td>
+                Building web applications, APIs, databases, and cloud-based
+                solutions.
+              </td>
+            </tr>
+
+            <tr>
+              <td>2023 - 2024</td>
+              <td>Software Developer</td>
+              <td>
+                Developed frontend and backend applications using modern
+                development technologies.
+              </td>
+            </tr>
+
+            <tr>
+              <td>2022 - 2023</td>
+              <td>Web Developer</td>
+              <td>Created websites and interactive web applications.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Education and Certifications</h3>
+
+        <ol>
+          <li>Software Development Training</li>
+          <li>Full-Stack Web Development</li>
+          <li>Cloud Computing Training</li>
+          <li>Artificial Intelligence Training</li>
+        </ol>
+
+        <!-- Local link to contact section -->
+        <p>
+          Interested in working together?
+          <a href="#contact">Contact me</a>.
+        </p>
+      </section>
+
+      <hr />
+
+      <!--  CONTACT SECTION Contains an HTML form-->
+      <section id="contact">
+        <h2>Contact Me</h2>
+
+        <p>
+          Have a project, question, or collaboration opportunity? Send me a
+          message using the form below.
+        </p>
+
+        <!--
+                Contact form.
+                The action can later be replaced with a backend endpoint.
+                method="post" sends form data using HTTP POST.
+            -->
+        <form action="/contact" method="post" autocomplete="on">
+          <!-- Full name field -->
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <p>
+              <label for="name"> Full Name: </label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                autocomplete="name"
+                required
+              />
+            </p>
+
+            <!-- Email field -->
+            <p>
+              <label for="email"> Email Address: </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@email.com"
+                autocomplete="email"
+                required
+              />
+            </p>
+
+            <!-- Telephone field -->
+            <p>
+              <label for="phone"> Phone Number: </label>
+
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+234 800 000 0000"
+                autocomplete="tel"
+              />
+            </p>
+          </fieldset>
+
+          <!-- Project information -->
+          <fieldset>
+            <legend>Project Information</legend>
+
+            <!-- Subject -->
+            <p>
+              <label for="subject"> Subject: </label>
+
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="What would you like to discuss?"
+                required
+              />
+            </p>
+
+            <!-- Service selection -->
+            <p>
+              <label for="service"> Service Required: </label>
+
+              <select id="service" name="service" required>
+                <option value="">-- Select a Service --</option>
+
+                <option value="web-development">Web Development</option>
+
+                <option value="mobile-development">Mobile Development</option>
+
+                <option value="api-development">API Development</option>
+
+                <option value="ai-development">AI Development</option>
+
+                <option value="consultation">Technical Consultation</option>
+              </select>
+            </p>
+
+            <!-- Preferred contact method -->
+            <p>Preferred Contact Method:</p>
+
+            <input
+              type="radio"
+              id="contact-email"
+              name="contact_method"
+              value="email"
+              checked
+            />
+
+            <label for="contact-email"> Email </label>
+
+            <input
+              type="radio"
+              id="contact-phone"
+              name="contact_method"
+              value="phone"
+            />
+
+            <label for="contact-phone"> Phone </label>
+
+            <!-- Message textarea -->
+            <p>
+              <label for="message"> Message: </label>
+            </p>
+
+            <textarea
+              id="message"
+              name="message"
+              rows="8"
+              cols="50"
+              placeholder="Tell me about your project..."
+              required
+            ></textarea>
+          </fieldset>
+
+          <!-- Form action buttons -->
+          <p>
+            <button type="submit">Send Message</button>
+
+            <button type="reset">Clear Form</button>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <hr />
+
+      <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+
+      <!-- Additional local navigation -->
+      <nav aria-label="Footer Navigation">
+        <ul>
+          <li>
+            <a href="#home">Back to Home</a>
+          </li>
+
+          <li>
+            <a href="#about">About</a>
+          </li>
+
+          <li>
+            <a href="#work">Work</a>
+          </li>
+
+          <li>
+            <a href="#resume">Resume</a>
+          </li>
+
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- External professional links -->
+      <p>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+        |
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
