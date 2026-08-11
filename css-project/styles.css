@@ -1,0 +1,385 @@
+/* General page styling */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f7fb;
+  color: #1f2937;
+}
+
+/* Main container */
+main {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header styling */
+header {
+  background-color: #111827;
+  color: white;
+  text-align: center;
+  padding: 50px 20px 30px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+header p {
+  max-width: 700px;
+  margin: 0 auto 25px;
+  color: #d1d5db;
+}
+
+/* Navigation styling */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  background-color: #2563eb;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #1d4ed8;
+}
+
+/* Remove unnecessary horizontal rule appearance */
+hr {
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+  margin: 50px 0;
+}
+
+/* General section styling */
+section {
+  background-color: white;
+  margin: 35px 0;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+  color: #111827;
+  font-size: 2rem;
+  margin-top: 0;
+  border-bottom: 3px solid #2563eb;
+  padding-bottom: 10px;
+}
+
+section h3 {
+  color: #2563eb;
+  margin-top: 25px;
+}
+
+section p {
+  color: #4b5563;
+}
+
+/* Skills and general lists */
+section ul,
+section ol {
+  padding-left: 25px;
+}
+
+section li {
+  margin-bottom: 8px;
+}
+
+/* Work/project cards */
+article {
+  border: 1px solid #e5e7eb;
+  border-left: 5px solid #2563eb;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  background-color: #f9fafb;
+}
+
+article h3 {
+  margin-top: 0;
+}
+
+article a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+article a:hover {
+  background-color: #1d4ed8;
+}
+
+/* Media elements */
+video {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+  background-color: #111827;
+}
+
+audio {
+  width: 100%;
+  max-width: 700px;
+  margin: 10px 0 20px;
+}
+
+/* Resume table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: white;
+}
+
+caption {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px;
+  color: #111827;
+}
+
+th,
+td {
+  border: 1px solid #d1d5db;
+  padding: 14px;
+  text-align: left;
+}
+
+th {
+  background-color: #2563eb;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f3f4f6;
+}
+
+tbody tr:hover {
+  background-color: #dbeafe;
+}
+
+/* Links inside the content */
+section a {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+section a:hover {
+  color: #1d4ed8;
+}
+
+/* Form styling */
+form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+legend {
+  padding: 0 10px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+label {
+  font-weight: bold;
+  color: #374151;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #2563eb;
+  border-color: #2563eb;
+}
+
+/* Radio buttons should not take the full input width */
+input[type="radio"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* Form buttons */
+button {
+  border: none;
+  padding: 12px 22px;
+  margin-right: 10px;
+  border-radius: 6px;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: white;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+button[type="reset"] {
+  background-color: #6b7280;
+}
+
+button[type="reset"]:hover {
+  background-color: #4b5563;
+}
+
+/* Footer styling */
+footer {
+  background-color: #111827;
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+  margin-top: 50px;
+}
+
+footer hr {
+  border-top-color: #374151;
+  margin: 0 auto 25px;
+  max-width: 900px;
+}
+
+footer p {
+  color: #d1d5db;
+}
+
+footer nav ul {
+  margin: 20px 0;
+}
+
+footer nav a {
+  background-color: transparent;
+  padding: 5px 10px;
+  color: #93c5fd;
+}
+
+footer nav a:hover {
+  color: white;
+  background-color: transparent;
+}
+
+footer > p:last-child a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+footer > p:last-child a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    width: 95%;
+  }
+
+  section {
+    padding: 22px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  nav a {
+    display: block;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th,
+  td {
+    padding: 10px;
+  }
+}
+
+/* Extra-small screen styling */
+@media (max-width: 480px) {
+  header {
+    padding: 35px 15px 25px;
+  }
+
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 18px;
+  }
+
+  button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
