@@ -7,6 +7,13 @@ class ChatRequest(BaseModel):
         min_length=1,
         max_length=2000
     )
+    conversation_topic: str = Field(
+        ...,
+        min_length=2,
+        max_length=500
+    )
+
+
 
 
 class ChatResponse(BaseModel):

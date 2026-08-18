@@ -1,30 +1,75 @@
-def generate_chat_response(message: str) -> str:
-    return f"AI response to: {message}"
+from typing import Any, cast
+from app.models.conversations import Conversation
+from app.models.messages import Message
+from app.exceptions.custom import CustomException
+from app.config.dbconfig import SessionLocal
+import ollama
 
 
-def generate_quiz(topic: str, number_of_questions: int) -> list[dict[str, object]]:
-    questions: list[dict[str, object]] = []
+def generate_chat_response(new_user_message: str, conversation_topic: str, user_id: str) -> str:
 
-    for _i in range(1, number_of_questions + 1):
-        questions.append({
-            "question": f"What is an important concept in {topic}?",
-            "options": [
-                "Option A",
-                "Option B",
-                "Option C",
-                "Option D"
-            ],
-            "answer": "Option A"
-        })
+    db = SessionLocal()
+    conversation = None
+    try:
 
-    return questions
+        print(new_user_message, conversation_topic, user_id)
+        # Find an existing conversation for the user and topic, or create a new one
+        conversation = db.query(Conversation).filter(
+            Conversation.title == conversation_topic,
+            Conversation.user_id == user_id
+        ).first()
 
+        if not conversation:
+            conversation = Conversation(
+                title=conversation_topic,
+                user_id=user_id
+            )
+            db.add(conversation)
+            db.commit()
+            db.refresh(conversation)
 
-def generate_summary(text: str, max_bullets: int):
-    sentences = [
-        sentence.strip()
-        for sentence in text.split(".")
-        if sentence.strip()
-    ]
+        # Generate AI response using Ollama
+        response = cast(Any, ollama).chat(
+            model="llama3.1:8b",
+            messages=[
+                {
+                    "role": "system",
+                    "content": "You are an educational assistant expert in AI, your task is to response to every question in detailed manner"
+                },
+                {
+                    "role": "user",
+                    "content": new_user_message
+                }
+            ]
+        )
+        ai_response_content = response["message"]["content"]
+      
 
-    return sentences[:max_bullets]
+        # Save user and AI messages to the conversation
+        db.add(conversation)
+        ai_message: Message = Message(
+            content=ai_response_content,
+            role="assistant",
+            conversation_id=conversation.id
+        )
+        
+        user_message: Message = Message(
+            content=new_user_message,
+            role="user",
+            conversation_id=conversation.id
+        )
+        
+        db.add(user_message)
+        db.add(ai_message)
+        db.commit()
+        
+        return ai_response_content
+
+    except Exception as e:
+        raise CustomException(
+            status_code=500,
+            detail=str(e)
+        )
+    finally:
+        db.close()
+

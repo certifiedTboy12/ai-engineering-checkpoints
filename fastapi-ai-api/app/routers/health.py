@@ -2,10 +2,13 @@ from datetime import datetime, timezone
 
 from fastapi import APIRouter
 
-router = APIRouter()
+router = APIRouter(
+    prefix="/heslth",
+    tags=["Health"]
+)
 
 
-@router.get("/health")
+@router.get("/")
 def health():
     return {
         "status": "healthy",
